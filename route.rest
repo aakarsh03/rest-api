@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6836e18593bae2bfe88fa0c2
+
+###
+
+POST  http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Thomas Shelby",
+    "subscribedToChannel" : "BBC Channel"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6836e18593bae2bfe88fa0c2   
+
+###
+
+PATCH  http://localhost:3000/subscribers/6837250c13b59fe95d308612
+Content-Type: application/json
+
+{
+    "name" : "Peaky Blinders",
+    "subscribedToChannel" : "Netflix"
+}
